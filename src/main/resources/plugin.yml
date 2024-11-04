@@ -1,0 +1,4 @@
+name: BloodRose
+version: '${project.version}'
+main: com.mugen.bloodrose.BloodRose
+api-version: '1.20'
