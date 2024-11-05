@@ -2,3 +2,32 @@ name: BloodRose
 version: '${project.version}'
 main: com.mugen.bloodrose.BloodRose
 api-version: '1.20'
+author: GuR
+depend: [ Vault, ProtocolLib ]
+
+commands:
+  bloodrose:
+    description: rose command
+    aliases: [ rose ]
+  ffa:
+    description: rose command
+  tdm:
+    description: rose command
+  sd:
+    description: rose command
+  dom:
+    description: rose command
+  cq:
+    description: rose command
+  inf:
+    description: rose command
+  leave:
+    description: rose command
+  menu:
+    description: rose command
+    aliases: [ mn ]
+
+permissions:
+  rose.admin:
+    default: op
+    description: Gives full access to the plugin

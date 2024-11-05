@@ -1,0 +1,46 @@
+
+#言語(ja, en)
+lang: ja
+#試合参加を受け付けるか
+enable_join_game: true
+#試合が始まるまでの待ち時間
+time_wait_game: 30
+
+#tp可能スポーン地点探索の試行回数
+amount_try_find_spawn: 5
+#tp可能スポーン地点探索時にどれくらいの範囲を探索するか
+find_spawn_radius: 5
+
+#キル報酬
+reward_kill: 100
+
+rewards:
+  ffa1: 2000
+  ffa2: 1500
+  ffa3: 1000
+  tdm: 1000
+  sd: 3000
+  dom: 3500
+  cq: 5000
+
+#モード一覧(ffa, tdm, sd, dom, cq, inf)
+mode_list:
+  - ffa
+  - tdm
+  - sd
+  - dom
+  - cq
+  - inf
+
+#開発中モード(参加不可能モード)
+mode_develop:
+  - sd
+  - dom
+  - cq
+  - inf
+
+#ロビーの地点
+location_global: ""
+
+#試合参加中のリスポーン待機地点
+location_respawn: ""

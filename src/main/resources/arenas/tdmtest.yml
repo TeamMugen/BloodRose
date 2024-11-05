@@ -1,0 +1,6 @@
+need_player: 2
+max_player: 10
+time_game: 180
+spawns:
+  - Location{world=CraftWorld{name=world},x=12.346729974737938,y=70.0,z=-15.725875629704788,pitch=7.6001716,yaw=49.35814}
+  - Location{world=CraftWorld{name=world},x=8.506083858699835,y=70.0,z=-16.551118480954305,pitch=7.3001714,yaw=-34.64196}
