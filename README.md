@@ -7,14 +7,19 @@
 
 ## Commands
 
-`/bloodrose
-alliase: /rose`
+Basic command is `/bloodrose`.
+The command's aliase is `/rose`.
+
+The command has some subcommands.
+The table below tells you how to use the subcommands.
+
+| Left align | Right align | Center align |
+|:-----------|------------:|:------------:|
+| This       |        This |     This     |
+| column     |      column |    column    |
+| will       |        will |     will     |
+| be         |          be |      be      |
+| left       |       right |    center    |
+| aligned    |     aligned |   aligned    |
 
 ## TODO
-
-```html:sample
-   <div class="radioWave">
-      <p>迷いの中あてなく見上げた空彩る星たちが</p>
-      <p>嘘みたいに晴れた朝に繋がることを教えてくれた</p>
-   </div>
-```/
