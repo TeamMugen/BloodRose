@@ -14,8 +14,8 @@ The command has some subcommands.
 The table below tells you how to use the subcommands.
 
 | Left align | Right align | Center align |
-|:-----------|------------:|:------------:|
-| This       |        This |     This     |
+|:----------:|:-----------:|:------------:|
+|a|        This |     This     |
 | column     |      column |    column    |
 | will       |        will |     will     |
 | be         |          be |      be      |
