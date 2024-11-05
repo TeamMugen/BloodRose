@@ -1,0 +1,17 @@
+need_player: 2
+max_player: 10
+time_game: 800
+
+points:
+  A: Location{world=CraftWorld{name=world},x=9.073019681396033,y=70.0,z=-5.300000011920929,pitch=40.00017,yaw=-38.56555}
+  B: Location{world=CraftWorld{name=world},x=9.073019681396033,y=70.0,z=-5.300000011920929,pitch=40.00017,yaw=-38.56555}
+  C: Location{world=CraftWorld{name=world},x=9.073019681396033,y=70.0,z=-5.300000011920929,pitch=40.00017,yaw=-38.56555}
+spawns:
+  - Location{world=CraftWorld{name=world},x=9.073019681396033,y=70.0,z=-5.300000011920929,pitch=40.00017,yaw=-38.56555}
+  - Location{world=CraftWorld{name=world},x=25.97513527644124,y=70.0,z=-7.333249465000192,pitch=5.0501842,yaw=-99.590034}
+  - Location{world=CraftWorld{name=world},x=8.440047578747423,y=71.0,z=-4.376622871369902,pitch=5.0501842,yaw=-99.590034}
+  - Location{world=CraftWorld{name=world},x=1.6120444258070592,y=70.0,z=17.38805835682439,pitch=3.850172,yaw=128.10666}
+  - Location{world=CraftWorld{name=world},x=1.4651003568792789,y=70.0,z=16.21631020052537,pitch=3.850172,yaw=128.10666}
+  - Location{world=CraftWorld{name=world},x=17.72378042556288,y=70.0,z=5.202024819831219,pitch=40.00017,yaw=-38.56555}
+  - Location{world=CraftWorld{name=world},x=19.99385566971084,y=70.0,z=8.052607341692546,pitch=40.00017,yaw=-38.56555}
+  - Location{world=CraftWorld{name=world},x=26.967982732353533,y=70.0,z=16.81795792335203,pitch=37.75015,yaw=-35.265076}

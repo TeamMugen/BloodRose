@@ -1,0 +1,30 @@
+need_player: 2
+max_player: 10
+time_game: 180
+
+#SDの必要な勝利数
+sd_need_winning_count: 5
+#SDの爆弾爆発時間(秒)
+time_bomb: 45
+#爆弾を設置するのに必要なクリック数
+count_bomb_place: 20
+#爆弾を解除するのに必要なクリック数
+count_bomb_pick: 30
+
+#ラウンド開始時に爆弾をドロップする地点
+point_bomb_drop: ""
+#爆弾を設置、解除する地点
+point_bomb_points:
+  - "A"
+  - "B"
+#デストロイヤーのスポーン地点
+point_spawn_destroyer: destroyer
+#サーチャーのスポーン地点
+point_spawn_searcher: searcher
+
+points:
+  A: Location{world=CraftWorld{name=world},x=37.66304437518981,y=70.0,z=0.6456371272221922,pitch=0.0,yaw=118.50672}
+  B: Location{world=CraftWorld{name=world},x=49.59922002050054,y=70.0,z=-8.02672448255717,pitch=0.0,yaw=87.306404}
+  C: Location{world=CraftWorld{name=world},x=49.59922002050054,y=70.0,z=-8.02672448255717,pitch=0.0,yaw=87.306404}
+  destroyer: Location{world=CraftWorld{name=world},x=20.568025297216483,y=70.0,z=-66.61482956240411,pitch=0.0,yaw=24.751932}
+  searcher: Location{world=CraftWorld{name=world},x=30.304837940006145,y=70.0,z=-60.80877664697021,pitch=0.0,yaw=36.901962}
