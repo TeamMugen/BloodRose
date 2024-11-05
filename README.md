@@ -15,7 +15,7 @@ The table below tells you how to use the subcommands.
 
 ### Subcommands
 | subcommand | sub-subcommands | function |
-|:----------:|:-----------:|:------------:|
+|:---:|:---|:---:|
 |**`spawn`**|`add <mode> <arena>`|現在地にスポーンポイントを作成|
 ||`del <mode> <arena> <index>`|スポーンポイントを削除|
 ||`tp <mode> <arena> <index>`|スポーンポイントへ移動|
