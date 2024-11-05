@@ -1,6 +1,6 @@
 package com.mugen.bloodrose.filemanager;
 
-import com.mugen.bloodrose.RosePvP;
+import com.mugen.bloodrose.BloodRose;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -14,11 +14,11 @@ import static com.mugen.bloodrose.filemanager.loader.LangLoader.loadLang;
 import static com.mugen.bloodrose.filemanager.loader.PlayerLoader.loadPlayers;
 
 public class FileManager {
-    private static RosePvP instance;
+    private static BloodRose instance;
     private static File configFile;
     public static FileConfiguration config;
 
-    public FileManager(RosePvP rosePvP) {
+    public FileManager(BloodRose rosePvP) {
         instance = rosePvP;
     }
 

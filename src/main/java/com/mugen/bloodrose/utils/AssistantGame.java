@@ -1,8 +1,7 @@
 package com.mugen.bloodrose.utils;
 
-import com.mugen.bloodrose.RosePvP;
+import com.mugen.bloodrose.BloodRose;
 import com.mugen.bloodrose.Score;
-import com.mugen.bloodrose.VariableMaps;
 import com.mugen.bloodrose.filemanager.PlayerData;
 import fr.skytasul.glowingentities.GlowingEntities;
 import net.milkbowl.vault.economy.Economy;
@@ -18,7 +17,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.*;
 
-import static com.mugen.bloodrose.RosePvP.getInstance;
+import static com.mugen.bloodrose.BloodRose.getInstance;
 import static com.mugen.bloodrose.VariableMaps.PlayerStatus.PLAYING;
 import static com.mugen.bloodrose.VariableMaps.*;
 import static com.mugen.bloodrose.VariableMaps.SDTeams.DESTROYER;
@@ -164,7 +163,7 @@ public class AssistantGame {
 
 
     public static void giveReward(Player p) {
-        Economy econ = ((RosePvP) getInstance()).getEconomy();
+        Economy econ = ((BloodRose) getInstance()).getEconomy();
         if (econ == null) {
             return;
         }

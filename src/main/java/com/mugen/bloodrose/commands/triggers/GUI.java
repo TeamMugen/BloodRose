@@ -1,6 +1,6 @@
 package com.mugen.bloodrose.commands.triggers;
 
-import com.mugen.bloodrose.RosePvP;
+import com.mugen.bloodrose.BloodRose;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -18,7 +18,7 @@ import org.bukkit.inventory.meta.SkullMeta;
 
 import java.util.*;
 
-import static com.mugen.bloodrose.RosePvP.getInstance;
+import static com.mugen.bloodrose.BloodRose.getInstance;
 import static com.mugen.bloodrose.VariableMaps.pyml;
 import static com.mugen.bloodrose.commands.CommandRosePvP.gameToggle;
 import static com.mugen.bloodrose.commands.CommandRosePvP.skipend;
@@ -97,7 +97,7 @@ public class GUI implements CommandExecutor, Listener {
             String rateINF = String.valueOf(allINF == 0 ? "Infinity" : ((double) Math.round((float) winINF / allINF * 100)) / 100);
 
 
-            Economy econ = ((RosePvP) getInstance()).getEconomy();
+            Economy econ = ((BloodRose) getInstance()).getEconomy();
             if (econ == null) {
                 return;
             }
