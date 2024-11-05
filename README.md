@@ -16,14 +16,15 @@ The table below tells you how to use the subcommands.
 ### Subcommands
 | subcommand | sub-subcommands | function |
 |:----------:|:-----------:|:------------:|
-|spawn|`add <mode> <arena>`|現在地にスポーンポイントを作成|
+|**`spawn`**|`add <mode> <arena>`|現在地にスポーンポイントを作成|
 ||`del <mode> <arena> <index>`|スポーンポイントを削除|
 ||`tp <mode> <arena> <index>`|スポーンポイントへ移動|
 ||`list <mode> <arena>`|スポーンポイントを一覧表示|
+|**`reload`**||プラグインの設定ファイルを読み込み|
 
 ## TODO
-[x]プラグインを作る
-[]FFAを作る
-[]TDMを作る
-[]SDを作る
-[]DOMを作る
+- [x] プラグインを作る
+- [] FFAを作る
+- [] TDMを作る
+- [] SDを作る
+- [] DOMを作る
