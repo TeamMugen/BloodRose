@@ -34,11 +34,32 @@ The table below tells you how to use the subcommands.
 ```
 | subcommand | sub-subcommands | function |
 |:---:|:---|:---|
+|**`reload`**||プラグインの設定ファイルを読み込み|
+|**`team`**|||
+|**`help`**|||
+|**`gametoggle`**|||
+|**`chat`**|||
+|**`end <mode> <arena>`**|||
+|**`join <mode> <arena>`**|||
+|**`cancel <player>`**|||
+|**`skip [<mode>] [<arena>]`**|||
+|**`status [<player>]`**|||
+|**`arena`**|`list`||
+||`status`||
+||`remove <mode> <arena>`||
+||`check <mode> <arena>`||
+|**`spot`**|`confirm`||
+||`cancel`||
+||`add <mode> <arena> <spot>`||
+||`del <mode> <arena> <spot>`|スポーンポイントを削除|
+||`tp <mode> <arena> <spot>`|スポーンポイントへ移動|
+||`list <mode> <arena>`|スポーンポイントを一覧表示|
 |**`spawn`**|`add <mode> <arena>`|現在地にスポーンポイントを作成|
+||`global`||
+||`respawn`||
 ||`del <mode> <arena> <index>`|スポーンポイントを削除|
 ||`tp <mode> <arena> <index>`|スポーンポイントへ移動|
 ||`list <mode> <arena>`|スポーンポイントを一覧表示|
-|**`reload`**||プラグインの設定ファイルを読み込み|
 
 ## TODO
 - [x] プラグインを作る
