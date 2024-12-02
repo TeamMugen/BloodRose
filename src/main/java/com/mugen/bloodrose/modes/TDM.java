@@ -3,7 +3,7 @@
 //import org.bukkit.entity.Player;
 //import org.bukkit.scheduler.BukkitRunnable;
 //
-//import static com.mugen.bloodrose.RosePvP.getInstance;
+//import static com.mugen.bloodrose.BloodRose.getInstance;
 //import static com.mugen.bloodrose.VariableMaps.PlayerRank;
 //import static com.mugen.bloodrose.filemanager.SessionData.*;
 //import static com.mugen.bloodrose.filemanager.loader.LangLoader.prefix;

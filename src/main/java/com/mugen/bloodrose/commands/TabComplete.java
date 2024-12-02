@@ -26,7 +26,7 @@ public class TabComplete implements TabCompleter {
     @Override
     public List<String> onTabComplete(CommandSender sender, Command cmd, String a, String[] args) {
         String cmdName = cmd.getName().toLowerCase();
-        if (!cmdName.equals("rosepvp")
+        if (!cmdName.equals("BloodRose")
                 && !modes.contains(cmdName)
                 && !cmdName.equals("leave")
                 && !cmdName.equals("menu")) return null;
@@ -54,7 +54,7 @@ public class TabComplete implements TabCompleter {
             }
         }
 
-        if (!cmdName.equals("rosepvp")) return null;
+        if (!cmdName.equals("BloodRose")) return null;
 
         if (!sender.isOp()) return null;
 

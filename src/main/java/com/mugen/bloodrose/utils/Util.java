@@ -115,12 +115,12 @@ public class Util {
         arenas.get(mode).remove(arena);
         sessions.put(session, null);
 
-        File fileToDelete = new File("plugins/RosePvP/arenas/" + session + ".yml");
+        File fileToDelete = new File("plugins/BloodRose/arenas/" + session + ".yml");
         if (fileToDelete.delete()) {
-            Bukkit.getLogger().info("[RosePvP] " + session + ".ymlを削除しました。");
+            Bukkit.getLogger().info("[BloodRose] " + session + ".ymlを削除しました。");
             p.sendMessage("§7アリーナ" + session + "の設定を削除しました。");
         } else {
-            Bukkit.getLogger().info("[RosePvP] " + session + ".ymlの削除に失敗しました。");
+            Bukkit.getLogger().info("[BloodRose] " + session + ".ymlの削除に失敗しました。");
             p.sendMessage("§cアリーナ" + session + "の設定を削除できませんでした。");
         }
     }

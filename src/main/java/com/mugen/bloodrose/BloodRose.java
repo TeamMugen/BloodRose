@@ -1,7 +1,7 @@
 package com.mugen.bloodrose;
 
 import com.mugen.bloodrose.commands.CommandAliases;
-import com.mugen.bloodrose.commands.CommandRosePvP;
+import com.mugen.bloodrose.commands.CommandBloodRose;
 import com.mugen.bloodrose.commands.TabComplete;
 import com.mugen.bloodrose.commands.triggers.Arena;
 import com.mugen.bloodrose.commands.triggers.GUI;
@@ -68,8 +68,8 @@ public final class BloodRose extends JavaPlugin {
             Objects.requireNonNull(getCommand(command)).setExecutor(new CommandAliases());
             Objects.requireNonNull(getCommand(command)).setTabCompleter(new TabComplete());
         }
-        Objects.requireNonNull(getCommand("rosepvp")).setExecutor(new CommandRosePvP());
-        Objects.requireNonNull(getCommand("rosepvp")).setTabCompleter(new TabComplete());
+        Objects.requireNonNull(getCommand("bloodrose")).setExecutor(new CommandBloodRose());
+        Objects.requireNonNull(getCommand("bloodrose")).setTabCompleter(new TabComplete());
         Objects.requireNonNull(getCommand("menu")).setExecutor(new GUI());
         Objects.requireNonNull(getCommand("menu")).setTabCompleter(new TabComplete());
     }

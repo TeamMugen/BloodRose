@@ -18,8 +18,8 @@ public class FileManager {
     private static File configFile;
     public static FileConfiguration config;
 
-    public FileManager(BloodRose rosePvP) {
-        instance = rosePvP;
+    public FileManager(BloodRose BloodRose) {
+        instance = BloodRose;
     }
 
     public static void reloadConfig() throws IOException {

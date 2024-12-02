@@ -20,8 +20,8 @@ import java.util.*;
 
 import static com.mugen.bloodrose.BloodRose.getInstance;
 import static com.mugen.bloodrose.VariableMaps.pyml;
-import static com.mugen.bloodrose.commands.CommandRosePvP.gameToggle;
-import static com.mugen.bloodrose.commands.CommandRosePvP.skipend;
+import static com.mugen.bloodrose.commands.CommandBloodRose.gameToggle;
+import static com.mugen.bloodrose.commands.CommandBloodRose.skipend;
 import static com.mugen.bloodrose.commands.triggers.CheckStatus.checkStatus;
 import static com.mugen.bloodrose.filemanager.PlayerData.getArena;
 import static com.mugen.bloodrose.filemanager.PlayerData.getMode;

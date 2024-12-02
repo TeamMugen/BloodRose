@@ -22,7 +22,7 @@ import static com.mugen.bloodrose.VariableMaps.uuids;
 
 public class PlayerLoader {
     public static void loadPlayers() {
-        String path = "plugins/RosePvP/players";
+        String path = "plugins/BloodRose/players";
         File file = new File(path);
         if (!file.exists()) {
             file.mkdir();
@@ -44,7 +44,7 @@ public class PlayerLoader {
     public static void loadPyml(Player p) {
         UUID uuid = p.getUniqueId();
         if (uuids.contains(uuid)) {
-            String yamlFilePath = "plugins/RosePvP/players/" + uuid.toString() + ".yml";
+            String yamlFilePath = "plugins/BloodRose/players/" + uuid.toString() + ".yml";
             Yaml yaml = new Yaml();
             try (InputStream inputStream = new FileInputStream(yamlFilePath)) {
                 Map<String, Object> data = yaml.load(inputStream);
@@ -75,7 +75,7 @@ public class PlayerLoader {
 
     public static void setPyml(Player p, Map<String, Integer> data) {
         UUID uuid = p.getUniqueId();
-        final File playerFile = new File("plugins/RosePvP/players", uuid + ".yml");
+        final File playerFile = new File("plugins/BloodRose/players", uuid + ".yml");
         final FileConfiguration playerConfig = YamlConfiguration.loadConfiguration(playerFile);
 
         playerConfig.set("kill", data.get("kill"));

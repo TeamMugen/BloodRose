@@ -34,7 +34,7 @@ public class ArenaLoader {
         VariableMaps.arenas = new HashMap<>();
 
         // ファイルディレクトリの指定
-        File dir = new File("plugins/RosePvP/arenas/");
+        File dir = new File("plugins/BloodRose/arenas/");
 
         // 対応するモードのリストを初期化
         for (String mode : modes) {
@@ -62,7 +62,7 @@ public class ArenaLoader {
 
                                 // リストに追加
                                 VariableMaps.arenas.get(mode).add(arena);
-                                Bukkit.getLogger().info("[RosePvP] load arena: " + mode + "." + arena);
+                                Bukkit.getLogger().info("[BloodRose] load arena: " + mode + "." + arena);
                             }
                         }
                     }
@@ -73,7 +73,7 @@ public class ArenaLoader {
 
     public static void loadArenas(String mode, String arena) {
         String session = mode + arena;
-        String yamlFilePath = "plugins/RosePvP/arenas/" + session + ".yml";
+        String yamlFilePath = "plugins/BloodRose/arenas/" + session + ".yml";
         Yaml yaml = new Yaml();
 
         if (!modes.contains(mode)) return;
@@ -81,7 +81,7 @@ public class ArenaLoader {
 
         try (InputStream inputStream = Files.newInputStream(new File(yamlFilePath).toPath())) {
             Map<String, Object> data = yaml.load(inputStream);
-            Bukkit.getLogger().info("[RosePvP] load arena \"" + mode + "." + arena + "\"");
+            Bukkit.getLogger().info("[BloodRose] load arena \"" + mode + "." + arena + "\"");
             sessions.put(session, new SessionData(mode));
 
             if (data.get("need_player") != null) {
@@ -213,12 +213,12 @@ public class ArenaLoader {
         options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
         Yaml yaml = new Yaml(options);
 
-        final File arenasDirectory = new File("plugins/RosePvP/arenas");
+        final File arenasDirectory = new File("plugins/BloodRose/arenas");
         if (!arenasDirectory.exists()) {
             arenasDirectory.mkdirs();
         }
 
-        String yamlFilePath = "plugins/RosePvP/arenas/" + session + ".yml";
+        String yamlFilePath = "plugins/BloodRose/arenas/" + session + ".yml";
 
         Map<String, Object> data = new HashMap<>();
 
@@ -245,7 +245,7 @@ public class ArenaLoader {
 //        DumperOptions options = new DumperOptions();
 //        options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
 //        Yaml yaml = new Yaml(options);
-//        String yamlFilePath = "plugins/RosePvP/arenas/" + session + ".yml";
+//        String yamlFilePath = "plugins/BloodRose/arenas/" + session + ".yml";
 //        try (FileWriter writer = new FileWriter(yamlFilePath)) {
 //            yaml.dump(data, writer);
 //        } catch (IOException e) {
@@ -254,13 +254,13 @@ public class ArenaLoader {
     }
 
     public static void createArenaYaml(String mode, String session) {
-        String folderPath = "plugins/RosePvP/arenas";
+        String folderPath = "plugins/BloodRose/arenas";
         File folder = new File(folderPath);
         if (!folder.exists()) {
             folder.mkdir();
         }
 
-        String filePath = "plugins/RosePvP/arenas/" + session + ".yml";
+        String filePath = "plugins/BloodRose/arenas/" + session + ".yml";
         File file = new File(filePath);
         if (!file.exists()) {
             try {

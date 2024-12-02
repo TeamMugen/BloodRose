@@ -31,9 +31,9 @@ public class LangLoader {
         }
 
         String file = "lang_" + lang + ".yml";
-        File langFile = new File("plugins/RosePvP", "lang_" + lang + ".yml");
+        File langFile = new File("plugins/BloodRose", "lang_" + lang + ".yml");
         if (!langFile.exists()) {
-            File dataFolder = new File("plugins/RosePvP");
+            File dataFolder = new File("plugins/BloodRose");
             Path destination = dataFolder.toPath().resolve(file);
             InputStream resourceStream = LangLoader.class.getClassLoader().getResourceAsStream(file);
             Files.copy(resourceStream, destination, StandardCopyOption.REPLACE_EXISTING);

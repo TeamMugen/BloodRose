@@ -17,7 +17,7 @@ package com.mugen.bloodrose.modes;//package com.mugen.bloodrose.games;
 //import static com.mugen.bloodrose.utils.FastBossbar.createBossBar;
 //import static com.mugen.bloodrose.utils.FastTeam.initializeTeam;
 //import static com.mugen.bloodrose.utils.FastTeam.joinTeam;
-//import static com.mugen.bloodrose.RosePvP.getInstance;
+//import static com.mugen.bloodrose.BloodRose.getInstance;
 //import static com.mugen.bloodrose.utils.Util.*;
 //import static com.mugen.bloodrose.commands.CheckTeam.checkTeam;
 //import static com.mugen.bloodrose.filemanager.loader.ConfigLoader.getTimeGame;

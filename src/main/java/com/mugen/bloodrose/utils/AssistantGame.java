@@ -136,7 +136,7 @@ public class AssistantGame {
 
         Integer r = getSpawnRadius();
 
-        Bukkit.getScheduler().runTask(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("RosePvP")), () -> {
+        Bukkit.getScheduler().runTask(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("BloodRose")), () -> {
             boolean hasNearbyPlayers = false;
             for (Entity entity : p.getNearbyEntities(r, r, r)) {
                 if (!(entity instanceof Player)) continue;
@@ -144,7 +144,7 @@ public class AssistantGame {
                 if (!pList.contains(entity)) continue;
 
                 hasNearbyPlayers = true;
-                Bukkit.getScheduler().runTask(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("RosePvP")), () -> {
+                Bukkit.getScheduler().runTask(Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("BloodRose")), () -> {
                     if (n < getSpawnTry()) {
                         choiceSpawn(spawnList, n + 1, p, pList);
 

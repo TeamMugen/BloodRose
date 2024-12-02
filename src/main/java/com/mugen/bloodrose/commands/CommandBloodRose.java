@@ -27,12 +27,12 @@ import static com.mugen.bloodrose.utils.FastTeam.removeTeam;
 import static com.mugen.bloodrose.utils.Util.checkStatusArena;
 import static com.mugen.bloodrose.utils.Util.sendError;
 
-public class CommandRosePvP implements CommandExecutor {
+public class CommandBloodRose implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String a, String[] args) {
         String cmdName = cmd.getName();
-        if (!cmdName.equalsIgnoreCase("rosepvp")) return false;
+        if (!cmdName.equalsIgnoreCase("bloodrose")) return false;
 
         //プレイヤーのみ実行可
         if (!(sender instanceof Player p)) {
