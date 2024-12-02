@@ -8,9 +8,11 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import java.io.IOException;
 
+import static com.mugen.bloodrose.BloodRose.getInstance;
 import static com.mugen.bloodrose.ListenerEvent.playerJoin;
 import static com.mugen.bloodrose.VariableMaps.PlayerStatus.PLAYING;
 import static com.mugen.bloodrose.VariableMaps.StatusArena.*;
@@ -186,6 +188,10 @@ public class CommandRosePvP implements CommandExecutor {
 
         for (String session : sessions.keySet()) {
             if (VariableMaps.sessions.containsKey(session)) {
+                setStatusArena(session, ABORT);
+
+
+
                 removeBossBar(session);
                 removeTeam(session);
             }
@@ -196,7 +202,16 @@ public class CommandRosePvP implements CommandExecutor {
         sessions.clear();
         reserveArena.clear();
 
-        FileManager.reloadConfig();
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                try {
+                    FileManager.reloadConfig();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }.runTaskLater(getInstance(), 100);
 
         for (Player $ : Bukkit.getOnlinePlayers()) {
             playerJoin($);

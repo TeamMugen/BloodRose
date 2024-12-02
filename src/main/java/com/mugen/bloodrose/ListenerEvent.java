@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.mugen.bloodrose.RosePvP.getInstance;
+import static com.mugen.bloodrose.BloodRose.getInstance;
 import static com.mugen.bloodrose.VariableMaps.*;
 import static com.mugen.bloodrose.VariableMaps.SDTeams.DESTROYER;
 import static com.mugen.bloodrose.VariableMaps.SDTeams.SEARCHER;
@@ -125,48 +125,48 @@ public class ListenerEvent implements Listener {
                     }
                     break;
 
-                case "sd":
-                    dropBomb(victim, victim.getLocation());
-                    runTask(() -> {
-                        victim.setGameMode(GameMode.SPECTATOR);
-                        if (getSDPlayers(session, DESTROYER).contains(victim)) {
-                            victim.teleport(getLocSD(session, DESTROYER));
-                        } else {
-                            victim.teleport(getLocSD(session, SEARCHER));
-                        }
-                    });
-
-                    if (getReds(session).contains(victim)) {
-                        if (!getDeads(session, "red").contains(victim)) {
-                            List<Player> pList = new ArrayList<>(getDeads(session, "red"));
-                            pList.add(victim);
-                            setDeads(session, "red", pList);
-
-                            if (getReds(session).size() == getDeads(session, "red").size()) {
-                                if (getRole(session, "red").equals(DESTROYER)) {
-                                    setStatusBomb(session, DEAD_DESTROYER);
-                                } else {
-                                    setStatusBomb(session, DEAD_SEARCHER);
-                                }
-                            }
-                        }
-
-                    } else if (getBlues(session).contains(victim)) {
-                        if (!getDeads(session, "blue").contains(victim)) {
-                            List<Player> pList = new ArrayList<>(getDeads(session, "blue"));
-                            pList.add(victim);
-                            setDeads(session, "blue", pList);
-
-                            if (getBlues(session).size() == getDeads(session, "blue").size()) {
-                                if (getRole(session, "blue").equals(DESTROYER)) {
-                                    setStatusBomb(session, DEAD_DESTROYER);
-                                } else {
-                                    setStatusBomb(session, DEAD_SEARCHER);
-                                }
-                            }
-                        }
-                    }
-                    break;
+//                case "sd":
+//                    dropBomb(victim, victim.getLocation());
+//                    runTask(() -> {
+//                        victim.setGameMode(GameMode.SPECTATOR);
+//                        if (getSDPlayers(session, DESTROYER).contains(victim)) {
+//                            victim.teleport(getLocSD(session, DESTROYER));
+//                        } else {
+//                            victim.teleport(getLocSD(session, SEARCHER));
+//                        }
+//                    });
+//
+//                    if (getReds(session).contains(victim)) {
+//                        if (!getDeads(session, "red").contains(victim)) {
+//                            List<Player> pList = new ArrayList<>(getDeads(session, "red"));
+//                            pList.add(victim);
+//                            setDeads(session, "red", pList);
+//
+//                            if (getReds(session).size() == getDeads(session, "red").size()) {
+//                                if (getRole(session, "red").equals(DESTROYER)) {
+//                                    setStatusBomb(session, DEAD_DESTROYER);
+//                                } else {
+//                                    setStatusBomb(session, DEAD_SEARCHER);
+//                                }
+//                            }
+//                        }
+//
+//                    } else if (getBlues(session).contains(victim)) {
+//                        if (!getDeads(session, "blue").contains(victim)) {
+//                            List<Player> pList = new ArrayList<>(getDeads(session, "blue"));
+//                            pList.add(victim);
+//                            setDeads(session, "blue", pList);
+//
+//                            if (getBlues(session).size() == getDeads(session, "blue").size()) {
+//                                if (getRole(session, "blue").equals(DESTROYER)) {
+//                                    setStatusBomb(session, DEAD_DESTROYER);
+//                                } else {
+//                                    setStatusBomb(session, DEAD_SEARCHER);
+//                                }
+//                            }
+//                        }
+//                    }
+//                    break;
 //
 //                case "dom":
 //                    if (whereIsPlayerIn.get(victim) != null) {

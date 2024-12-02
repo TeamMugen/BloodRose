@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.mugen.bloodrose.RosePvP.getInstance;
+import static com.mugen.bloodrose.BloodRose.getInstance;
 import static com.mugen.bloodrose.VariableMaps.SDTeams.DESTROYER;
 import static com.mugen.bloodrose.VariableMaps.SDTeams.SEARCHER;
 import static com.mugen.bloodrose.VariableMaps.sessions;

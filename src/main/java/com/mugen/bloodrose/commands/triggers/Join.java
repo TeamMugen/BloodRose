@@ -2,8 +2,6 @@ package com.mugen.bloodrose.commands.triggers;
 
 import com.mugen.bloodrose.Score;
 import com.mugen.bloodrose.modes.FFA;
-import com.mugen.bloodrose.modes.SD;
-import com.mugen.bloodrose.modes.TDM;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
@@ -31,12 +29,16 @@ public class Join {
     public Join(String mode, String arena, Player p) {
         if (getPlayerStatus(p).equals(PLAYING)) {
             p.sendMessage("§c試合参加中は実行できません。");
+            deinit();
             return;
         }
+
         //プレイヤーが既にアリーナに参加しているか
         if (getSession(p) != null) {
+            //同じモードに参加してる場合、離脱させる
             if (getMode(p).equalsIgnoreCase(mode)) {
                 checkLeaveArena(p);
+                deinit();
                 return;
             }
         }
@@ -46,6 +48,7 @@ public class Join {
         this.p = p;
         session = mode + this.arena;
 
+        //参加可能かつ使用可能なアリーナがあるかどうか
         if (!isModeAllowed() || !arenaSelect()) {
             deinit();
             return;
@@ -263,8 +266,8 @@ public class Join {
     private void initializeGame() {
         switch (mode) {
             case "ffa" -> new FFA(arena);
-            case "tdm" -> new TDM(arena);
-            case "sd" -> new SD(arena);
+//            case "tdm" -> new TDM(arena);
+//            case "sd" -> new SD(arena);
         }
     }
 

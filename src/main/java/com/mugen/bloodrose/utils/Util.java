@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import static com.mugen.bloodrose.RosePvP.getInstance;
+import static com.mugen.bloodrose.BloodRose.getInstance;
 import static com.mugen.bloodrose.VariableMaps.SDTeams.DESTROYER;
 import static com.mugen.bloodrose.VariableMaps.SDTeams.SEARCHER;
 import static com.mugen.bloodrose.VariableMaps.*;

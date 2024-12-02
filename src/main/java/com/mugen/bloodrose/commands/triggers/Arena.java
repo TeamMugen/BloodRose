@@ -168,24 +168,24 @@ public class Arena implements CommandExecutor, Listener {
 //                }
                 break;
 
-            case "sd":
-                Location searcher = getLocSD(session, SEARCHER);
-                Location destroyer = getLocSD(session, DESTROYER);
-
-                p.sendMessage("§6アリーナ" + session + "スポーンの設定状況");
-
-                if (searcher == null) {
-                    p.sendMessage("§eSearcherスポーン: §7未設定");
-                } else {
-                    p.sendMessage("§eSearcherスポーン: §7設定済み");
-                }
-
-                if (destroyer == null) {
-                    p.sendMessage("§eDestroyerスポーン: §7未設定");
-                } else {
-                    p.sendMessage("§eDestroyerスポーン: §7設定済み");
-                }
-                break;
+//            case "sd":
+//                Location searcher = getLocSD(session, SEARCHER);
+//                Location destroyer = getLocSD(session, DESTROYER);
+//
+//                p.sendMessage("§6アリーナ" + session + "スポーンの設定状況");
+//
+//                if (searcher == null) {
+//                    p.sendMessage("§eSearcherスポーン: §7未設定");
+//                } else {
+//                    p.sendMessage("§eSearcherスポーン: §7設定済み");
+//                }
+//
+//                if (destroyer == null) {
+//                    p.sendMessage("§eDestroyerスポーン: §7未設定");
+//                } else {
+//                    p.sendMessage("§eDestroyerスポーン: §7設定済み");
+//                }
+//                break;
             default:
                 p.sendMessage("§cモードが違います。");
                 break;

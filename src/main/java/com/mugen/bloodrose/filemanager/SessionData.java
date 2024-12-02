@@ -1,7 +1,6 @@
 package com.mugen.bloodrose.filemanager;
 
 import com.mugen.bloodrose.VariableMaps;
-import com.mugen.bloodrose.modes.SD;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
@@ -51,7 +50,7 @@ public class SessionData {
     List<String> bombPoints;
     Map<String, Location> points;
 
-    SD.InformOfBomb informBomb;
+//    SD.InformOfBomb informBomb;
 
 
     public SessionData(String mode) {
@@ -89,7 +88,7 @@ public class SessionData {
                 this.locDestroy = null;
                 this.locSearch = null;
                 this.bombPoints = new ArrayList<>();
-                this.informBomb = new SD.InformOfBomb();
+//                this.informBomb = new SD.InformOfBomb();
             case "dom":
             case "cq":
         }
@@ -356,12 +355,12 @@ public class SessionData {
     }
 
 
-    public static SD.InformOfBomb getInformBomb(String session) {
-        return sessions.get(session).informBomb;
-    }
-    public static void setInformBomb(String session, SD.InformOfBomb inform) {
-        sessions.get(session).informBomb = inform;
-    }
+//    public static SD.InformOfBomb getInformBomb(String session) {
+//        return sessions.get(session).informBomb;
+//    }
+//    public static void setInformBomb(String session, SD.InformOfBomb inform) {
+//        sessions.get(session).informBomb = inform;
+//    }
 
 
     public static String getLocBomb(String session) {

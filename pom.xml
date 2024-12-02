@@ -12,7 +12,7 @@
     <name>BloodRose</name>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -30,7 +30,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.4</version>
+                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -44,7 +44,7 @@
                         <relocation>
                             <pattern>fr.mrmicky.fastboard</pattern>
                             <!-- Replace 'com.yourpackage' with the package of your plugin ! -->
-                            <shadedPattern>com.keisa1333.rosepvp</shadedPattern>
+                            <shadedPattern>com.keisa1333.bloodrose</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

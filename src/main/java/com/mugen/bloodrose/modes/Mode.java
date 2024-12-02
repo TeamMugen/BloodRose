@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static com.mugen.bloodrose.RosePvP.getInstance;
+import static com.mugen.bloodrose.BloodRose.getInstance;
 import static com.mugen.bloodrose.VariableMaps.*;
 import static com.mugen.bloodrose.commands.triggers.Arena.updateArenaMenu;
 import static com.mugen.bloodrose.filemanager.SessionData.*;
